@@ -71,6 +71,10 @@ header nav ul li a {
   display: none;
 }
 
+.mobile-menu {
+  display: none;
+}
+
 .contact {
   background-color: var(--White);
   border-radius: 2rem;
@@ -336,6 +340,15 @@ footer .socials svg:hover path {
     display: none;
   }
 
+  header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1.5rem 3rem;
+    background-color: #3EBFFF;
+    width: 100%;
+  }
+
   .menu-icon {
     display: block;
   }
@@ -345,7 +358,7 @@ footer .socials svg:hover path {
   }
 
   .mobile-menu {
-    position: absolute;
+    position: fixed;
     z-index: 2;
     top: 10rem;
     left: 3rem;
@@ -390,8 +403,13 @@ footer .socials svg:hover path {
 
   .container-bg {
     background-image: url('images/mobile/image-header.jpg');
+    height: 100rem;
     background-position: 50% 80%;
     background-size: 780px;
+  }
+
+  .main-section {
+    margin-top: 25rem;
   }
 
   .main-section div {
